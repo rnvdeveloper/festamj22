@@ -60,35 +60,39 @@ body {
 }
 
 .photos {
-   background-color: white;
+   background-color: rgba(45, 4, 112, .2);
    width: 100vw;
-   height: 20vh;
+   min-height: 20vh;
    display: flex;
-   justify-content: space-evenly;
    align-items: center;
-   animation: slide-in 20000ms;
+   border-top: 3px solid black;
+   border-bottom: 3px solid black;
    overflow: hidden;
+   box-shadow: 0px 0px 20px white;
 
 
    .photositem {
-      margin-left: 50px;
-      height: 80%;
+      height: 150px;
+      margin: 0 30px;
       border-radius: 10px;
+      border: 1px solid white;
+      box-shadow: 5px 5px 20px rgb(104, 98, 98);
    }
 
-   @keyframes slide-in {
-      from {
-         transform: translateX(-100%);
-      }
+   @media (max-width: 1800px) {
+      justify-content: unset;
+      overflow: scroll;
+   }
 
-      to {
-         transform: translateX(5%);
+   @media (max-width: 768px) {
+      justify-content: unset;
+      overflow: scroll;
+
+      :nth-child(1) {
+         margin-left: 10;
       }
    }
 }
-
-
-
 
 .faq {
    padding: 30px 80px;
@@ -96,7 +100,6 @@ body {
    text-decoration: none;
    background-color: #2d0470;
    color: white;
-
 
    .titleh2 {
       line-height: 5rem;
@@ -112,9 +115,10 @@ body {
       }
    }
 
-
    .questionanswer {
       background-color: rgba(255, 255, 255, .85);
+      border: .5px solid white;
+      box-shadow: 0 0 15px rgb(255, 252, 252);
       border-radius: 5px;
       color: black;
       display: grid;
@@ -136,7 +140,6 @@ body {
       }
    }
 
-
    .finalmessage {
       font-family: 'Permanent Marker', cursive;
       margin-top: 80px;
@@ -145,7 +148,6 @@ body {
       line-height: 6rem;
       margin-bottom: 50px;
    }
-
 
    @media (max-width: 768px) {
       padding: 30px;
