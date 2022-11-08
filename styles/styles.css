@@ -54,15 +54,22 @@ main p {
   line-height: 5rem;
   text-align: center;
 }
-.faq img {
+.faq .questionanswer {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  border-bottom: 1px solid white;
+  margin-top: 30px;
+}
+.faq .questionanswer img {
   width: 50px;
   margin-bottom: 20px;
 }
-.faq p {
-  margin-left: 10px;
+.faq .questionanswer p {
+  margin-left: 15px;
 }
-.faq strong {
-  margin-left: 10px;
+.faq .questionanswer strong {
+  margin-left: 15px;
+  margin-bottom: 20px;
 }
 .faq .finalmessage {
   font-family: "Permanent Marker", cursive;
@@ -79,11 +86,6 @@ main p {
     font-size: 3rem;
     line-height: 6rem;
   }
-}
-
-.questionanswer {
-  display: grid;
-  grid-template-columns: 50px 1fr;
 }
 
 /*# sourceMappingURL=styles.css.map */

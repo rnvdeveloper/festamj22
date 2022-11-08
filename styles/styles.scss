@@ -54,23 +54,34 @@ main {
    color: white;
    bottom: 0;
 
+
    .titleh2 {
       line-height: 5rem;
       text-align: center;
    }
 
-   img {
-      width: 50px;
-      margin-bottom: 20px;
+
+   .questionanswer {
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      border-bottom: 1px solid white;
+      margin-top: 30px;
+
+      img {
+         width: 50px;
+         margin-bottom: 20px;
+      }
+
+      p {
+         margin-left: 15px;
+      }
+
+      strong {
+         margin-left: 15px;
+         margin-bottom: 20px;
+      }
    }
 
-   p {
-      margin-left: 10px;
-   }
-
-   strong {
-      margin-left: 10px;
-   };
 
    .finalmessage {
       font-family: 'Permanent Marker', cursive;
@@ -79,6 +90,7 @@ main {
       font-size: 4rem;
       line-height: 6rem;
    }
+
 
    @media (max-width: 768px) {
       .finalmessage {
@@ -89,10 +101,4 @@ main {
          line-height: 6rem;
       }
    }
-}
-
-.questionanswer {
-   display: grid;
-   grid-template-columns: 50px 1fr;
-
 }
