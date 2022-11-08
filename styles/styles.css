@@ -132,6 +132,11 @@ body {
 .faq .questionanswer p {
   margin-left: 30px;
 }
+@media (max-width: 768px) {
+  .faq .questionanswer {
+    max-width: 100vw;
+  }
+}
 .faq .finalmessage {
   font-family: "Permanent Marker", cursive;
   margin-top: 80px;
