@@ -87,6 +87,7 @@ body {
    @media (max-width: 768px) {
       justify-content: unset;
       overflow: scroll;
+      padding: 10px;
 
       :nth-child(1) {
          margin-left: 10;
@@ -150,7 +151,7 @@ body {
    }
 
    @media (max-width: 768px) {
-      padding: 30px;
+      padding: 10px;
 
       .finalmessage {
          font-family: 'Permanent Marker', cursive;
