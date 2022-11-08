@@ -54,6 +54,16 @@ main p {
   line-height: 5rem;
   text-align: center;
 }
+.faq img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+.faq p {
+  margin-left: 10px;
+}
+.faq strong {
+  margin-left: 10px;
+}
 .faq .finalmessage {
   font-family: "Permanent Marker", cursive;
   margin-top: 80px;
@@ -71,8 +81,9 @@ main p {
   }
 }
 
-strong {
-  margin-right: 10px;
+.questionanswer {
+  display: grid;
+  grid-template-columns: 50px 1fr;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -59,6 +59,19 @@ main {
       text-align: center;
    }
 
+   img {
+      width: 50px;
+      margin-bottom: 20px;
+   }
+
+   p {
+      margin-left: 10px;
+   }
+
+   strong {
+      margin-left: 10px;
+   };
+
    .finalmessage {
       font-family: 'Permanent Marker', cursive;
       margin-top: 80px;
@@ -66,8 +79,6 @@ main {
       font-size: 4rem;
       line-height: 6rem;
    }
-
-
 
    @media (max-width: 768px) {
       .finalmessage {
@@ -80,7 +91,8 @@ main {
    }
 }
 
+.questionanswer {
+   display: grid;
+   grid-template-columns: 50px 1fr;
 
-strong {
-   margin-right: 10px;
 }
