@@ -8,7 +8,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5rem;
-  overflow-x: hidden;
 }
 
 .main {
@@ -32,13 +31,6 @@ body {
   margin-bottom: 100px;
   text-shadow: 5px 5px 5px black;
 }
-@media (max-width: 768px) {
-  .main .maintitle {
-    font-size: 3rem;
-    line-height: 5rem;
-    margin-bottom: 50px;
-  }
-}
 .main p {
   margin-bottom: 40px;
 }
@@ -48,6 +40,11 @@ body {
     min-height: 100vh;
     padding: 20px;
   }
+  .main .maintitle {
+    font-size: 3rem;
+    line-height: 5rem;
+    margin-bottom: 50px;
+  }
   .main p {
     font-size: 1.5rem;
     text-shadow: 3px 3px 3px black;
@@ -56,7 +53,7 @@ body {
 }
 
 .faq {
-  padding: 30px 20px 80px;
+  padding: 30px 15px 80px;
   min-height: 100vh;
   text-decoration: none;
   background-color: #2d0470;
@@ -72,11 +69,6 @@ body {
 .faq .containerinfaq {
   max-width: 50vw;
   margin: auto;
-}
-@media (max-width: 768px) {
-  .faq .containerinfaq {
-    max-width: 100vw;
-  }
 }
 .faq .questionanswer {
   background-color: rgba(255, 255, 255, 0.85);
@@ -100,11 +92,6 @@ body {
 .faq .questionanswer p {
   margin-left: 30px;
 }
-@media (max-width: 768px) {
-  .faq .questionanswer {
-    max-width: 100vw;
-  }
-}
 .faq .finalmessage {
   font-family: "Permanent Marker", cursive;
   margin-top: 80px;
@@ -116,7 +103,7 @@ body {
 .faq .btnpresenca {
   background-color: #f3d148;
   color: black;
-  min-width: 400px;
+  min-width: max-content;
   height: max-content;
   justify-self: center;
   border-radius: 8px;
@@ -133,15 +120,25 @@ body {
   box-shadow: 0px 0px 15px white;
 }
 @media (max-width: 768px) {
-  .faq {
-    padding: 30px 20px 100px;
+  .faq .titleh2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .faq .containerinfaq {
+    max-width: 100vw;
+  }
+  .faq .questionanswer {
+    max-width: 100vw;
+  }
+  .faq .btnpresenca {
+    font-size: 1.2rem;
   }
   .faq .finalmessage {
     font-family: "Permanent Marker", cursive;
-    margin-top: 20px;
+    font-size: 2.5rem;
+    line-height: 5rem;
+    margin-top: 40px;
     text-align: center;
-    font-size: 3rem;
-    line-height: 6rem;
   }
 }
 
@@ -149,15 +146,17 @@ body {
   background-color: black;
   color: white;
   min-height: 10vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 30px 10px 50px;
+  text-align: center;
 }
 .footer h3 {
   margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
